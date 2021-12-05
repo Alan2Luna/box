@@ -1,0 +1,37 @@
+.infoModal {
+    max-width: 250px;
+    max-height: 560px;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.infoModal-img {
+    width: 100%;
+    display: block;
+}
+
+.infoModal-content {
+    padding: 1em;
+}
+
+@media (min-width: 760px) {
+    .infoModal {
+        display: flex;
+        max-width: 600px;
+    }
+
+    .infoModal-img {
+        max-width: 280px;
+    }
+
+    .infoModal-close {
+        color: rgba(0, 0, 0, .5);
+    }
+}
+
+@media (min-width: 1000px) {
+    .infoModal {
+        max-width: 750px;
+    }
+}

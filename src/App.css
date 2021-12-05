@@ -1,0 +1,30 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--padding-left-right-xs: .5em;
+	--padding-left-right-sm: 1em;	/*340px*/
+	--padding-left-right-md: 1.5em; /*650px*/
+	--padding-left-right-lg: 2em;	/*880px*/
+	--padding-left-right-xl: 2.5em; 	/*1100px*/
+	--padding-left-right-xxl: 3em; /*1320px*/
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.filters {
+	width: 200px;
+}

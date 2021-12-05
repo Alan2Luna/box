@@ -1,0 +1,10 @@
+.filter-container-movil {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 880px) {
+    .filter-container-movil {
+        display: none;
+    }
+}

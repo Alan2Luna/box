@@ -1,0 +1,53 @@
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: #dadbf3;
+    cursor: pointer;
+}
+
+.container-img {
+    position: relative;
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+}
+
+.product-info {
+    padding: .8em;
+    font-size: 1rem;
+    color: #1a1717;
+}
+
+.icon-add {
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    font-size: 2.6em;
+    background-color: white;
+    border-radius: 50%;
+    color: blue;
+}
+
+@media (min-width: 980px) {
+    .product:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    }
+
+    .icon-add {
+        visibility: hidden;
+        transition: transform .3s;
+        will-change: visibility, transition;
+    }
+
+    .product:hover .icon-add {
+        visibility: visible;
+    }
+
+    .icon-add:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .7);
+    }
+}

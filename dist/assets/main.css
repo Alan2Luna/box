@@ -1,0 +1,431 @@
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/Header/Header.css ***!
+  \********************************************************************************/
+.header {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: var(--padding-left-right-xs);
+    padding-left: var(--padding-left-right-xs);
+    background-color: blue;
+    color: white;
+}
+
+.logo img {
+    height: 45px;
+    display: block;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cart {
+    font-size: 2em;
+}
+
+@media (min-width: 340px) {
+    .header {
+        padding-right: var(--padding-left-right-sm);
+        padding-left: var(--padding-left-right-sm);
+    }
+}
+
+@media (min-width: 650px) {
+    .header {
+        padding-left: var(--padding-left-right-md);
+        padding-right: var(--padding-left-right-md);
+    }
+}
+
+@media (min-width: 880px) {
+    .header {
+        padding-left: var(--padding-left-right-lg);
+        padding-right: var(--padding-left-right-lg);
+    }
+}
+
+@media (min-width: 1100px) {
+    .header {
+        padding-left: var(--padding-left-right-xl);
+        padding-right: var(--padding-left-right-xl);
+    }
+}
+
+@media (min-width: 1320px) {
+    .header {
+        padding-left: var(--padding-left-right-xxl);
+        padding-right: var(--padding-left-right-xxl);
+    }
+}
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/ListOfCards/ListOfCards.css ***!
+  \**********************************************************************************************/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: .8em;
+    width: 100%;
+   /* padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: .5em;
+    padding-left: .5em;*/
+}
+/*
+@media (min-width: 340px) {
+    .cards-container {
+        padding-right: var(--padding-left-right-sm);
+        padding-left: var(--padding-left-right-sm);
+    }
+}
+
+@media (min-width: 650px) {
+    .cards-container {
+        padding-left: var(--padding-left-right-md);
+        padding-right: var(--padding-left-right-md);
+    }
+}
+
+@media (min-width: 880px) {
+    .cards-container {
+        padding-left: var(--padding-left-right-lg);
+        padding-right: var(--padding-left-right-lg);
+    }
+}
+
+@media (min-width: 1100px) {
+    .cards-container {
+        padding-left: var(--padding-left-right-xl);
+        padding-right: var(--padding-left-right-xl);
+    }
+}
+
+@media (min-width: 1320px) {
+    .cards-container {
+        padding-left: var(--padding-left-right-xxl);
+        padding-right: var(--padding-left-right-xxl);
+    }
+}
+*/
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Card/Card.css ***!
+  \********************************************************************************/
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: #dadbf3;
+    cursor: pointer;
+}
+
+.container-img {
+    position: relative;
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+}
+
+.product-info {
+    padding: .8em;
+    font-size: 1rem;
+    color: #1a1717;
+}
+
+.icon-add {
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    font-size: 2.6em;
+    background-color: white;
+    border-radius: 50%;
+    color: blue;
+}
+
+@media (min-width: 980px) {
+    .product:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    }
+
+    .icon-add {
+        visibility: hidden;
+        transition: transform .3s;
+        will-change: visibility, transition;
+    }
+
+    .product:hover .icon-add {
+        visibility: visible;
+    }
+
+    .icon-add:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .7);
+    }
+}
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/FilterContainer/FilterContainer.css ***!
+  \******************************************************************************************************/
+.filter-container {
+    display: none;
+}
+
+@media (min-width: 880px) {
+    .filter-container {
+        max-width: 150px;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #e1e3ff;
+        padding: 1em;
+    }
+    
+    .filter + .filter {
+        margin-top: 1.5em;
+    }
+}
+
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/FilterContainerMovil/FilterContainerMovil.css ***!
+  \****************************************************************************************************************/
+.filter-container-movil {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 880px) {
+    .filter-container-movil {
+        display: none;
+    }
+}
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/ButtonModal/ButtonModal.css ***!
+  \**********************************************************************************************/
+.button-modal {
+    padding: .5em 1em;
+    border-radius: 10px;
+    border: none;
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Filter/Filter.css ***!
+  \************************************************************************************/
+.title-filter {
+    margin-bottom: .8em;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: .5em;
+}
+
+
+input[type="checkbox"] {
+    display: grid;
+    place-content: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.015em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: .65em;
+    height: .65em;
+    transform: scale(0);
+    transition: 120ms transform easy-in-out;
+    box-shadow: inset 1em 1em purple;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.form-control:hover  {
+    font-weight: bold;
+}
+
+.form-control:hover input[type="checkbox"] {
+    border: 0.13em solid currentColor;
+}
+
+input[type="checkbox"]:checked + span {
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked {
+    border: 0.13em solid currentColor;
+}
+
+.list-item-checkbox + .list-item-checkbox {
+    margin-top: .5em;
+}
+
+.input-filter {
+    cursor: pointer;
+}
+
+.text-filter {
+    cursor: pointer;
+}
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Modal/Modal.css ***!
+  \**********************************************************************************/
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-container {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    z-index: 1;
+    top: 0.5em;
+    right: 0.5em;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/InfoModal/InfoModal.css ***!
+  \******************************************************************************************/
+.infoModal {
+    max-width: 250px;
+    max-height: 560px;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.infoModal-img {
+    width: 100%;
+    display: block;
+}
+
+.infoModal-content {
+    padding: 1em;
+}
+
+@media (min-width: 760px) {
+    .infoModal {
+        display: flex;
+        max-width: 600px;
+    }
+
+    .infoModal-img {
+        max-width: 280px;
+    }
+
+    .infoModal-close {
+        color: rgba(0, 0, 0, .5);
+    }
+}
+
+@media (min-width: 1000px) {
+    .infoModal {
+        max-width: 750px;
+    }
+}
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/Marketplace/Marketplace.css ***!
+  \*****************************************************************************************/
+.marketplace {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: var(--padding-left-right-xs);
+    padding-right: var(--padding-left-right-xs);
+}
+
+@media (min-width: 340px) {
+    .marketplace {
+        padding-right: var(--padding-left-right-sm);
+        padding-left: var(--padding-left-right-sm);
+    }
+}
+
+@media (min-width: 650px) {
+    .marketplace {
+        padding-left: var(--padding-left-right-md);
+        padding-right: var(--padding-left-right-md);
+    }
+}
+
+@media (min-width: 880px) {
+    .marketplace {
+        padding-left: var(--padding-left-right-lg);
+        padding-right: var(--padding-left-right-lg);
+        flex-direction: row;
+        align-items: start;
+    }
+}
+
+@media (min-width: 1100px) {
+    .marketplace {
+        padding-left: var(--padding-left-right-xl);
+        padding-right: var(--padding-left-right-xl);
+    }
+}
+
+@media (min-width: 1320px) {
+    .marketplace {
+        padding-left: var(--padding-left-right-xxl);
+        padding-right: var(--padding-left-right-xxl);
+    }
+}
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/App.css ***!
+  \***************************************************************/
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--padding-left-right-xs: .5em;
+	--padding-left-right-sm: 1em;	/*340px*/
+	--padding-left-right-md: 1.5em; /*650px*/
+	--padding-left-right-lg: 2em;	/*880px*/
+	--padding-left-right-xl: 2.5em; 	/*1100px*/
+	--padding-left-right-xxl: 3em; /*1320px*/
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.filters {
+	width: 200px;
+}
